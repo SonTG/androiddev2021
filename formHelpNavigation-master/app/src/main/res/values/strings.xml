@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">formHelp</string>
+    <string name="weather_day">Thursday</string>
+    <string name="user_name">=^._.^=</string>
+    <string name="email">nguyenanthiet221@gmail.com</string>
+    <string name="practical_1">Practical 1</string>
+    <string name="practical_2">Practical 2</string>
+    <string name="practical_3">Practical 3</string>
+    <string name="practical_4">Practical 4</string>
+    <string name="practical_5">Practical 5</string>
+    <string name="mobile_app_practical">Mobile Application Course</string>
+    <string name="ready">Ready to check Logcat</string>
+    <string name="Mon">Mon</string>
+    <string name="Tue">Tue</string>
+    <string name="Wed">Wed</string>
+    <string name="Thu">Thu</string>
+    <string name="Fri">Fri</string>
+    <string name="Sat">Sat</string>
+    <string name="Sun">Sun</string>
+    <string name="partly_cloudy">Partly Clouldy</string>
+    <string name="showers">Showers</string>
+    <string name="mostly_cloudy">Mostly Cloudy</string>
+    <string name="usth_weather">USTH Weather</string>
+</resources>

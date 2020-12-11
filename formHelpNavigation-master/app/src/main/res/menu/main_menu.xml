@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <item
+        android:id="@+id/practical_1"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 1"
+        ></item>
+    <item
+        android:id="@+id/practical_2"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 2"></item>
+    <item
+        android:id="@+id/practical_3"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 3"></item>
+    <item
+        android:id="@+id/practical_4"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 4"
+        ></item>
+    <item
+        android:id="@+id/practical_5"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 5"
+        ></item>
+</menu>
