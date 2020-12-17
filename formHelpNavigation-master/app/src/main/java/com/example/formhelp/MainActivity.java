@@ -16,6 +16,7 @@ import com.example.formhelp.practical2.fragment.FragmentLogActivity;
 import com.example.formhelp.practical3.FragmentBackground;
 import com.example.formhelp.practical4.FragmentWeather;
 import com.example.formhelp.practical5.FragmentForecast;
+import com.example.formhelp.practical6.fragment.FragmentDirection;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -64,6 +65,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.practical_5:
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_,fragmentForecast).commit();
+                break;
+            case R.id.practical_6:
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_,new FragmentDirection()).commit();
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);

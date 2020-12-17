@@ -21,4 +21,8 @@
     <string name="showers">Showers</string>
     <string name="mostly_cloudy">Mostly Cloudy</string>
     <string name="usth_weather">USTH Weather</string>
+    <string name="direct">Direct</string>
+    <string name="default_degree">12C</string>
+    <string name="default_status">Cloudy</string>
+    <string name="default_location">Paris</string>
 </resources>

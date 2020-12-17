@@ -24,4 +24,9 @@
         android:icon="@drawable/ic_doc"
         android:title="Practical 5"
         ></item>
+    <item
+        android:id="@+id/practical_6"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 6"
+        ></item>
 </menu>

@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
         <activity android:name=".practical2.activity.LogActivity"></activity>
+        <activity android:name=".practical6.activity.MultipleFragmentActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
