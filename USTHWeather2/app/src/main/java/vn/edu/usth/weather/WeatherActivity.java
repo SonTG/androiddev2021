@@ -8,26 +8,24 @@ import androidx.fragment.app.FragmentManager;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.util.Log;
-import android.widget.ImageView;
 
 public class WeatherActivity extends AppCompatActivity {
 
+    ForecastFragment forecastFragment;
+//
+//    @NonNull
+//    @Override
+//    public FragmentManager getSupportFragmentManager() {
+//        return super.getSupportFragmentManager();
+//    }
 
-
-    @NonNull
     @Override
-    public FragmentManager getSupportFragmentManager() {
-        return super.getSupportFragmentManager();
-    }
-
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
-
-        ForecastFragment forecastFragment = new ForecastFragment();
+         forecastFragment = new ForecastFragment();
         getSupportFragmentManager().beginTransaction().replace(
-                R.id.container, forecastFragment).commit();
+                R.id.frame_layout, forecastFragment).commit();
     }
 
     @Override
