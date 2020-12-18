@@ -4,26 +4,50 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class WeatherActivity extends AppCompatActivity {
 
-    ForecastFragment forecastFragment;
-    WeatherFragment weatherFragment;
+    WeatherAndForecastFragment weatherAndForecastFragment;
+    ViewPager viewPager;
+    TextView pagination;
+    int total = 3, count = 1;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        forecastFragment = new ForecastFragment();
-        weatherFragment = new WeatherFragment();
+        viewPager = findViewById(R.id.view_pager);
+        pagination = findViewById(R.id.pagination);
+
+        viewPager.setAdapter(new SliderAdapter(getSupportFragmentManager()));
+        pagination.setText(count + "/" + total);
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                count = 0;
+                count = position + 1;
+                pagination.setText(count + "/" + total);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
-
-
 
     @Override
     protected void onStart() {
