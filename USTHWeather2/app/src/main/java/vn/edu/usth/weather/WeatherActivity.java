@@ -11,6 +11,8 @@ import android.os.PersistableBundle;
 import android.util.Log;
 import android.widget.TextView;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class WeatherActivity extends AppCompatActivity {
 
     WeatherAndForecastFragment weatherAndForecastFragment;
@@ -25,6 +27,9 @@ public class WeatherActivity extends AppCompatActivity {
 
         viewPager = findViewById(R.id.view_pager);
         pagination = findViewById(R.id.pagination);
+        TabLayout tabLayout = findViewById(R.id.tabLayout);
+        tabLayout.setupWithViewPager(viewPager);
+
 
         viewPager.setAdapter(new SliderAdapter(getSupportFragmentManager()));
         pagination.setText(count + "/" + total);
