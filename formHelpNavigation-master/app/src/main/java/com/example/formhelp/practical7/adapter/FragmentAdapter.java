@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.formhelp.practical6.fragment.FragmentForecast1;
 import com.example.formhelp.practical6.fragment.FragmentWeather1;
+import com.example.formhelp.practical7.fragment.FragmentWeatherAndForecast;
 
 public class FragmentAdapter extends FragmentPagerAdapter {
     public FragmentAdapter(FragmentManager fm) {
@@ -15,25 +16,17 @@ public class FragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        Fragment fragment_switch;
-        if (position == 0) {
-            fragment_switch = new FragmentWeather1();
-        } else
-            fragment_switch = new FragmentForecast1();
-        return fragment_switch;
+        return new FragmentWeatherAndForecast();
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        if (position == 0) {
-            return "Weather";
-        }else
-            return "Forecast";
+        return "Fragment Weather ForeCast";
     }
 }

@@ -19,17 +19,12 @@ import java.util.ArrayList;
 public class FragmentWeather1 extends Fragment {
     private RecyclerView rclStatusWeather;
     private ArrayList<Status>statuses;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_weather_1,container,false);
-        return view;
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        statuses= new ArrayList<>();
+        statuses = new ArrayList<>();
         statuses.add(new Status("Partly Cloudy",R.drawable.cloudyo,"24C","31C","Mon"));
         statuses.add(new Status("Showers",R.drawable.raino,"24C","30C","Tue"));
         statuses.add(new Status("Rain",R.drawable.raino,"22C","30C","Wed"));
@@ -40,7 +35,14 @@ public class FragmentWeather1 extends Fragment {
         statuses.add(new Status("Scatted ThunderStorms",R.drawable.ic_cloud,"24C","27C","Mon"));
         statuses.add(new Status("Showers",R.drawable.raino,"24C","26C","Tue"));
         statuses.add(new Status("Scatted ThunderStorms",R.drawable.ic_cloud,"23C","27C","Wed"));
-        rclStatusWeather = getActivity().findViewById(R.id.rcl_weather_status);
-        rclStatusWeather.setAdapter(new AdapterStatus(statuses,getContext()));
+        rclStatusWeather = view.findViewById(R.id.rcl_weather_status);
+        AdapterStatus adapterStatus = new AdapterStatus(statuses,view.getContext());
+        rclStatusWeather.setAdapter(adapterStatus);
+        return view;
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
     }
 }
