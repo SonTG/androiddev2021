@@ -12,21 +12,18 @@ import android.util.Log;
 public class WeatherActivity extends AppCompatActivity {
 
     ForecastFragment forecastFragment;
-//
-//    @NonNull
-//    @Override
-//    public FragmentManager getSupportFragmentManager() {
-//        return super.getSupportFragmentManager();
-//    }
+    WeatherFragment weatherFragment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
-         forecastFragment = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction().replace(
-                R.id.frame_layout, forecastFragment).commit();
+
+        forecastFragment = new ForecastFragment();
+        weatherFragment = new WeatherFragment();
     }
+
+
 
     @Override
     protected void onStart() {
