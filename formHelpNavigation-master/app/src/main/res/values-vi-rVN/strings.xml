@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">formHelp</string>
+    <string name="weather_day">Thứ 5</string>
+    <string name="user_name">=^._.^=</string>
+    <string name="email">nguyenanthiet221@gmail.com</string>
+    <string name="practical_1">Bài tập 1</string>
+    <string name="practical_2">Bài tập 2</string>
+    <string name="practical_3">Bài tập 3</string>
+    <string name="practical_4">Bài tập 4</string>
+    <string name="practical_5">Bài tập 5</string>
+    <string name="practical_6">Bài tập 6</string>
+    <string name="practical_7">Bài tập 7</string>
+    <string name="mobile_app_practical">Mobile Application Course</string>
+    <string name="ready">Chuẩn bị để check Logcat</string>
+    <string name="Mon">Thứ 2</string>
+    <string name="Tue">Thứ 3</string>
+    <string name="Wed">Thứ 4</string>
+    <string name="Thu">Thứ 5</string>
+    <string name="Fri">Thứ 6</string>
+    <string name="Sat">Thứ 7</string>
+    <string name="Sun">Chủ Nhật</string>
+    <string name="partly_cloudy">Ít Mây</string>
+    <string name="showers">Có Mưa</string>
+    <string name="mostly_cloudy">Nhiều Mây</string>
+    <string name="usth_weather">USTH Weather</string>
+    <string name="direct">Chuyển trang</string>
+    <string name="default_degree">12C</string>
+    <string name="default_status">Có Mây</string>
+    <string name="default_location">Pa-ri</string>
+    <string name="rain">Mưa</string>
+    <string name="scattered_shower">Rải rác</string>
+    <string name="thunderstorm">Có Bão</string>
+    <string name="scattered_thunder_storm">Áp thấp</string>
+</resources>

@@ -7,6 +7,8 @@
     <string name="practical_2">Practical 2</string>
     <string name="practical_3">Practical 3</string>
     <string name="practical_4">Practical 4</string>
+    <string name="practical_6">Practical 6</string>
+    <string name="practical_7">Practical 7</string>
     <string name="practical_5">Practical 5</string>
     <string name="mobile_app_practical">Mobile Application Course</string>
     <string name="ready">Ready to check Logcat</string>
@@ -25,4 +27,8 @@
     <string name="default_degree">12C</string>
     <string name="default_status">Cloudy</string>
     <string name="default_location">Paris</string>
+    <string name="rain">Rain</string>
+    <string name="scattered_shower">Scatted Shower</string>
+    <string name="thunderstorm">Thunder Storm</string>
+    <string name="scattered_thunder_storm">Scatted Thunder Storm</string>
 </resources>
