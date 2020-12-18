@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.formhelp.practical1.FragmentHelloWorld;
+import com.example.formhelp.practical11.FragmentListenYourIdol;
 import com.example.formhelp.practical2.fragment.FragmentLogActivity;
 import com.example.formhelp.practical3.FragmentBackground;
 import com.example.formhelp.practical4.FragmentWeather;
@@ -72,6 +73,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.practical_7:
                 getSupportFragmentManager().beginTransaction().replace(R.id.content_,new FragmentPager()).commit();
+                break;
+            case R.id.practical_11:
+                getSupportFragmentManager().beginTransaction().replace(R.id.content_,new FragmentListenYourIdol()).commit();
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/background_ed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/edsheeran_x"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:background="@drawable/background_musict"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/background_ed"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/stop"
+            android:id="@+id/img_stop"
+            />
+        <ImageView
+            android:layout_margin="25dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/play"
+            android:id="@+id/img_play_music"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pause"
+            android:id="@+id/img_pause_music"
+            />
+    </LinearLayout>
+</RelativeLayout>
