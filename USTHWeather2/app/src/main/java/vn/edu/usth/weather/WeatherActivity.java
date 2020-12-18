@@ -30,7 +30,6 @@ public class WeatherActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
 
-
         viewPager.setAdapter(new SliderAdapter(getSupportFragmentManager()));
         pagination.setText(count + "/" + total);
 

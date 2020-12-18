@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Weather</string>
+
+    <string name="Mon">Partiellement nuageux</string>
+    <string name="Tue">Douches</string>
+    <string name="Wed">Pluie</string>
+    <string name="Thu">Douches éparses</string>
+    <string name="Fri">Plutôt nuageux</string>
+    <string name="Sat">Partiellement nuageux</string>
+    <string name="Sun">Orages</string>
+</resources>
