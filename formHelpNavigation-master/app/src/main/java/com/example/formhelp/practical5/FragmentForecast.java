@@ -47,16 +47,26 @@ public class FragmentForecast  extends Fragment implements View.OnClickListener 
 
     private void initArrayList() {
         statuses= new ArrayList<>();
-        statuses.add(new Status("Partly Cloudy",R.drawable.cloudyo,"24C","31C","Mon"));
-        statuses.add(new Status("Showers",R.drawable.raino,"24C","30C","Tue"));
-        statuses.add(new Status("Rain",R.drawable.raino,"22C","30C","Wed"));
-        statuses.add(new Status("Scatted Showers",R.drawable.cloudyo,"22C","27C","Thu"));
-        statuses.add(new Status("Mostly Cloudy",R.drawable.cloudyo,"22C","30C","Fri"));
-        statuses.add(new Status("Partly Cloudy",R.drawable.cloudyo,"24C","31C","Sat"));
-        statuses.add(new Status("ThunderStorms",R.drawable.raino,"25C","28C","Sun"));
-        statuses.add(new Status("Scatted ThunderStorms",R.drawable.ic_cloud,"24C","27C","Mon"));
-        statuses.add(new Status("Showers",R.drawable.raino,"24C","26C","Tue"));
-        statuses.add(new Status("Scatted ThunderStorms",R.drawable.ic_cloud,"23C","27C","Wed"));
+        statuses.add(new Status(getContext().getResources().getString(
+                R.string.partly_cloudy),R.drawable.cloudyo,"24C","31C","Mon"));
+        statuses.add(new Status(getContext().getResources().getString(
+                R.string.showers),R.drawable.raino,"24C","30C","Tue"));
+        statuses.add(new Status(getContext().getResources().getString(
+                R.string.rain),R.drawable.raino,"22C","30C","Wed"));
+        statuses.add(new Status(getContext().getResources().getString(
+                R.string.scattered_shower),R.drawable.cloudyo,"22C","27C","Thu"));
+        statuses.add(new Status(getContext().getResources().getString(
+                R.string.mostly_cloudy),R.drawable.cloudyo,"22C","30C","Fri"));
+        statuses.add(new Status(getContext().getResources().getString(
+                R.string.partly_cloudy),R.drawable.cloudyo,"24C","31C","Sat"));
+        statuses.add(new Status(getContext().getResources().getString(
+                R.string.thunderstorm),R.drawable.raino,"25C","28C","Sun"));
+        statuses.add(new Status(getContext().getResources().getString(
+                R.string.scattered_thunder_storm),R.drawable.ic_cloud,"24C","27C","Mon"));
+        statuses.add(new Status(getContext().getResources().getString(
+                R.string.showers),R.drawable.raino,"24C","26C","Tue"));
+        statuses.add(new Status(getContext().getResources().getString(
+                R.string.scattered_thunder_storm),R.drawable.ic_cloud,"23C","27C","Wed"));
     }
 
     @Override
