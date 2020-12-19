@@ -24,7 +24,7 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View forecastFragment = inflater.inflate(R.layout.forecastfragment, container, false);
-        
+
         RecyclerView recyclerView = forecastFragment.findViewById(R.id.recycler_view);
 
         weathers = new ArrayList<Weather>();

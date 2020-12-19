@@ -7,7 +7,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -18,7 +17,7 @@ public class WeatherActivity extends AppCompatActivity {
     WeatherAndForecastFragment weatherAndForecastFragment;
     ViewPager viewPager;
     TextView pagination;
-    int total = 3, count = 1;
+    int total = 4, count = 1;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -23,23 +23,16 @@ public class SliderAdapter extends FragmentStatePagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0:
-                return new WeatherAndForecastFragment();
-
-            case 1:
-                return new WeatherAndForecastFragment();
-
-            case 2:
-                return new WeatherAndForecastFragment();
-
             default:
                 return new WeatherAndForecastFragment();
+            case 3:
+                return new MusicListeningFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Nullable
@@ -49,7 +42,9 @@ public class SliderAdapter extends FragmentStatePagerAdapter {
             return "TAB 1";
         } else if (position == 1) {
             return "TAB 2";
-        } else
+        } else if (position == 2) {
             return "TAB 3";
+        } else
+            return "MUSIC TAB";
     }
 }
