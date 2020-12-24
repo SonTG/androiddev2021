@@ -30,6 +30,7 @@ public class WeatherActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         viewPager.setAdapter(new SliderAdapter(getSupportFragmentManager()));
+
         pagination.setText(count + "/" + total);
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

@@ -22,12 +22,16 @@ public class SliderAdapter extends FragmentStatePagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        switch (position) {
-            default:
-                return new WeatherAndForecastFragment();
-            case 3:
-                return new MusicListeningFragment();
+        Fragment fragment;
+
+        if (position == 0 || position == 1 || position == 2) {
+            fragment = new WeatherAndForecastFragment();
         }
+        else {
+            fragment = new MusicListeningFragment();
+        }
+
+        return fragment;
     }
 
     @Override
