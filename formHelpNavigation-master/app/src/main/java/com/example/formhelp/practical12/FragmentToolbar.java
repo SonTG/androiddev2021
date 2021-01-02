@@ -1,7 +1,12 @@
 package com.example.formhelp.practical12;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,11 +42,84 @@ public class FragmentToolbar extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.img_reload:
-                Toast.makeText(getContext(),"Reload !",Toast.LENGTH_LONG).show();
+//                reload();
+//                requestNetwork();
+                task.execute();
                 break;
             case R.id.img_setting:
                 startActivity(new Intent(this.getActivity(),PrefActivity.class));
                 break;
         }
+    }
+    private Handler handler1;
+    final AsyncTask<String, Integer, Bitmap> task = new AsyncTask<String, Integer, Bitmap>() {
+            @Override
+            protected Bitmap doInBackground(String... strings) {
+                final Thread thread = new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            Thread.sleep(3000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        Bundle bundle = new Bundle();
+                        bundle.putString("server_response","No Internet connection");
+                        Message msg = new Message();
+                        msg.setData(bundle);
+                        handler1.sendMessage(msg);
+                    }
+                });
+                thread.start();
+                return null;
+            }
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+            }
+
+            @Override
+            protected void onProgressUpdate(Integer... values) {
+                super.onProgressUpdate(values);
+            }
+
+            @Override
+            protected void onPostExecute(Bitmap bitmap) {
+                handler1 = new Handler(Looper.getMainLooper()){
+                    @Override
+                    public void handleMessage(@NonNull Message msg) {
+                        String content = msg.getData().getString("server_response");
+                        Toast.makeText(getContext(),content,Toast.LENGTH_LONG).show();
+                    }
+                };
+            }
+        };
+    private void reload() {
+        final Handler handler = new Handler(Looper.getMainLooper()){
+            @Override
+            public void handleMessage(@NonNull Message msg) {
+                String content = msg.getData().getString("server_response");
+                Toast.makeText(getContext(),content,Toast.LENGTH_LONG).show();
+            }
+        };
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                try {
+                    Thread.sleep(5000);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+                Bundle bundle = new Bundle();
+                bundle.putString("server_response","some sample json here");
+                Message msg = new Message();
+                msg.setData(bundle);
+                handler.sendMessage(msg);
+            }
+
+        });
+        thread.start();
     }
 }
