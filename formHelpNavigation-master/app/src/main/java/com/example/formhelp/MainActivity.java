@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (savedInstanceState==null){
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_,new FragmentListenYourIdol()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_,new FragmentToolbar()).commit();
         }
         init();
     }
