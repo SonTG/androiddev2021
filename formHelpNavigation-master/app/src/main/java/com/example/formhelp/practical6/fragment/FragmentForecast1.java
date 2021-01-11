@@ -18,6 +18,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.ImageRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.formhelp.R;
 
 import java.io.InputStream;
@@ -37,7 +42,8 @@ public class FragmentForecast1 extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         img = getActivity().findViewById(R.id.img_cloud);
-        task.execute();
+        //task.execute();
+        uploadImageVolley();
     }
     private void downloadImage(){
         try {
@@ -101,4 +107,24 @@ public class FragmentForecast1 extends Fragment {
 //            };
         }
     };
+    public void uploadImageVolley(){
+        //perform one per app instance
+        RequestQueue queue = Volley.newRequestQueue(getContext());
+        //a listener (likes onPostExecute)
+        Response.Listener<Bitmap>listener = new Response.Listener<Bitmap>() {
+            @Override
+            public void onResponse(Bitmap response) {
+                img.setImageBitmap(response);
+            }
+        };
+        //request to require image
+        ImageRequest imageRequest = new ImageRequest("https://smallimg.pngkey.com/png/small/185-1858620_neko-atsume-marshmallow-plush.png",
+                listener,
+                0,
+                0,
+                ImageView.ScaleType.CENTER,
+                Bitmap.Config.ARGB_8888,
+                null);
+        queue.add(imageRequest);
+    }
 }
