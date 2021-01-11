@@ -53,7 +53,7 @@ public class FragmentToolbar extends Fragment implements View.OnClickListener {
             case R.id.img_reload:
 //                reload();
 //                requestNetwork();
-                task.execute();
+                //task.execute();
                 break;
             case R.id.img_setting:
                 startActivity(new Intent(this.getActivity(),PrefActivity.class));
