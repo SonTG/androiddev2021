@@ -3,15 +3,16 @@
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <FrameLayout
+    <RelativeLayout
         android:id="@+id/music_container"
         android:layout_height="match_parent"
         android:layout_width="match_parent">
 
         <ImageView
+            android:id="@+id/iv_music"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/milkywaybackground"/>
+            android:src="@drawable/milkyway_background"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -59,5 +60,5 @@
                     android:text="STOP"/>
             </LinearLayout>
         </LinearLayout>
-    </FrameLayout>
+    </RelativeLayout>
 </LinearLayout>
