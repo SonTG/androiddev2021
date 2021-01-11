@@ -31,13 +31,13 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/ic_reverse"
-                android:id="@+id/img_reload"
+                android:id="@+id/img_make_reload"
                 android:layout_marginRight="50dp"/>
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/ic_donline"
-                android:id="@+id/img_setting"/>
+                android:id="@+id/img_other"/>
         </LinearLayout>
     </RelativeLayout>
     <fragment
