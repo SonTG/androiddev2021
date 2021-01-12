@@ -40,64 +40,9 @@ public class WeatherAndForecastFragment extends Fragment {
     }
 
     @Override
-    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
-
-        getActivity().getMenuInflater().inflate(R.menu.icon_menu, menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu_refresh:
-                refresh();
-                break;
-            case R.id.menu_settings:
-                Toast.makeText(getContext(),"Settings Action Button", Toast.LENGTH_LONG).show();
-                startActivity(new Intent(this.getActivity(), PrefActivity.class));
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-    public void refresh() {
-        final Handler handler = new Handler(Looper.getMainLooper()) {
-            @Override
-            public void handleMessage(Message msg) {
-                // This method is executed in main thread
-                String content = msg.getData().getString("server_response");
-                Toast.makeText(getActivity(), content, Toast.LENGTH_SHORT).show();
-            }
-        };
-
-        Thread t = new Thread(new Runnable() {
-            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-            @Override
-            public void run() {
-                // this method is run in a worker thread
-                try {
-                    // wait for 5 seconds to simulate a long network access
-                    Thread.sleep(5000);
-                }
-                catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                // Assume that we got our data from server
-                Bundle bundle = new Bundle();
-                bundle.putString("server_response", "some sample json here");
-// notify main thread
-                Message msg = new Message();
-                msg.setData(bundle);
-                handler.sendMessage(msg);
-            }
-        });
-        t.start();
-    }
-
-    @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
         toolbarFragment = getActivity().findViewById(R.id.toolbar);
-
     }
 }

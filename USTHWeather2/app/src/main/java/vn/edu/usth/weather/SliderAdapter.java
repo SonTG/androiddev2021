@@ -43,7 +43,7 @@ public class SliderAdapter extends FragmentStatePagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return "TAB 1";
+            return "TAB 1zzz";
         } else if (position == 1) {
             return "TAB 2";
         } else if (position == 2) {

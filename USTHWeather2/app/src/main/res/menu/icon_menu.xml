@@ -10,6 +10,6 @@
     <item android:id="@+id/menu_settings"
         android:title="Settings"
         app:showAsAction="always"
-        android:icon="@drawable/ic_vert">
+        android:icon="@drawable/ic_refresh">
     </item>
 </menu>
