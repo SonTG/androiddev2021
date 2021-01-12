@@ -8,20 +8,32 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class WeatherActivity extends AppCompatActivity {
     private final static String TAG = "WeatherActivity";
     //    private AppBarConfiguration appBarConfiguration;
     private MediaPlayer player;
+
+    public WeatherActivity() throws IOException {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -154,4 +166,24 @@ public class WeatherActivity extends AppCompatActivity {
             return;
         }
     }
+
+//    // initialize URL
+//    URL url = new URL("http://ict.usth.edu.vn/wp-content/" +
+//            "uploads/usth/usthlogo.png");
+//    // Make a request to server
+//    HttpURLConnection connection =
+//            (HttpURLConnection) url.openConnection();
+//connection.setRequestMethod("GET");
+//connection.setDoInput(true);
+//// allow reading response code and response dataconnection.
+//connection.connect();
+//    // Receive response
+//    int response = connection.getResponseCode();
+//Log.i("USTHWeather","The response is: "+response);
+//    InputStream is = connection.getInputStream();
+//    // Process image response
+//    Bitmap bitmap = BitmapFactory.decodeStream(is);
+//    ImageView logo = (ImageView) findViewById(R.id.logo);
+//logo.setImageBitmap(bitmap);
+//connection.disconnect();
 }

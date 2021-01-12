@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">USTH Weather</string>
     <string name="action_settings">Settings</string>
@@ -24,7 +25,5 @@
     <string name="wind">Windy</string>
     <string name="city" translatable="false">Paris</string>
     <string name="detail_forecast">24⁰C\nCloudy</string>
-    <string name="action_refresh">Refresh</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_refresh" translatable="false">refresh</string>
 </resources>
