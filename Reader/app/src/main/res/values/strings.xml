@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Reader</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_following">No followed sites</string>
+    <string name="fragment_discover"></string>
+    <string name="btn_following">Discover Sites</string>
+    <string name="fragment_likes">Nothing liked yet</string>
+    <string name="fragment_saved">No saved posts</string>
+    <string name="likes2">Posts that you like will appear here.</string>
+    <string name="likes_button">Go to Following</string>
+    <string name="saved2">Tap to save a post to your list.</string>
+    <string name="content">Mở đầu một thập kỷ mới, mùa xuân 2020 nên đi du lịch ở đâu?</string>
+    <string name="paragraph">Khởi đầu một năm mới, bắt đầu một thập kỷ mới tràn đầy năng lượng thì còn gì tuyệt vời hơn một chuyến “du xuân” vui nổ trời. Có phải bạn vẫn còn đang “lăn tăn” chưa biết Tết nên đi du lịch ở đâu đúng không? Để Traveloka gợi ý thử cho bạn một vài nơi nhé!
+
+Mùa xuân này nên đi du lịch trong nước gần gũi, hay du lịch nước ngoài “chanh sả” đây ta? Chỉ cần đọc hết bài viết dưới đây của Traveloka thôi là ra quyết định ngay được luôn! Để xem, những nơi nào thích hợp để “team quốc nội” và “team quốc ngoại” đặt chân đến vào mùa xuân năm 2020 đây!</string>
+    <string name="header1">Sau Tết nên đi du lịch ở đâu? Du lịch nước ngoài</string>
+    <string name="para1">“Đi một ngày đàng, học một sàng khôn”. Du lịch nước ngoài sẽ mang đến cả bầu trời trải nghiệm mới toan – khi bạn đến một nơi xa lạ mà không ai nói ngôn ngữ bạn nói, không ai bạn quen biết và tiếp xúc với nền văn hóa bạn chưa từng chạm qua. Vậy để bắt đầu một năm 2020 thật nhiều trải nghiệm mới, hãy cùng Traveloka khám phá mùa xuân ở các nước sau xem sao nhé!</string>
+    <string name="header2">Hàn Quốc</string>
+    <string name="para2">Đứng đầu trong số các lựa chọn nước ngoài để vi vu trong dịp năm mới chính là Hàn Quốc. Xứ sở kim chi, như bạn đã thấy trên phim ảnh, cứ mỗi độ xuân về lại hấp dẫn lạ thường. Hoa đào nở rực khắp nơi, cộng hưởng tiết trời se lạnh, diện hanbok chụp hình thì còn gì bằng. Ngoài ra, các “tín đồ” shopping, nghiệm mỹ phẩm và mua sắm chắc chắn rất nên chọn Hàn. Bởi dịp cuối năm là thời điểm hàng loại cửa hàng “sale sập sàn”, tha hồ chọn mua những món mình thích. Đến Hàn Quốc vào thời điểm đầu năm, bạn có thể chọn đi tour với Traveloka để vừa tiết kiệm chi phí, lại đỡ rắc rối khoản lo thủ tục visa vì chúng mình làm hết cho bạn rồi. Bạn cũng chẳng cần đắn đo lên lịch trình, chỉ việc xách vali lên và đi, còn lại cứ để tour lo!</string>
+
+    <!--btn settings-->
+    <string name="setting1">+ Add a Topic</string>
+    <string name="url">    Enter the URL of a site to follow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

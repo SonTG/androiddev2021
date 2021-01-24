@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".likes"
+    android:id="@+id/frm_likes">
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="90sp"
+        android:src="@drawable/background_saved"
+        android:contentDescription="TODO" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/fragment_likes"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/likes2"
+        android:gravity="center"
+        android:layout_marginTop="50sp"
+        />
+    <Button
+        android:id="@+id/btn_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/likes_button"
+        android:layout_marginTop="65sp"
+        android:layout_gravity="center"
+        android:backgroundTint="#dc143c" />
+
+</FrameLayout>

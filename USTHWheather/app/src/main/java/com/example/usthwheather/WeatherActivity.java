@@ -1,15 +1,7 @@
 package com.example.usthwheather;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.PagerAdapter;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -19,13 +11,17 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+
 import com.google.android.material.tabs.TabLayout;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class WeatherActivity extends AppCompatActivity {
     private final static String TAG = "WeatherActivity";
@@ -53,6 +49,7 @@ public class WeatherActivity extends AppCompatActivity {
 
         player = MediaPlayer.create(this, R.raw.song);
         player.start();
+
     }
 
     @Override
@@ -132,7 +129,7 @@ public class WeatherActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_refresh:
-                new refresh().execute();
+                
                 return true;
             case R.id.action_settings:
                 Log.d(TAG, "onOptionsItemSelected: click");
@@ -147,12 +144,13 @@ public class WeatherActivity extends AppCompatActivity {
     private class refresh extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void... voids) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                Thread.sleep(1000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
             return null;
+
         }
 
         protected void onProgressUpdate(Void... voids) {
@@ -167,23 +165,5 @@ public class WeatherActivity extends AppCompatActivity {
         }
     }
 
-//    // initialize URL
-//    URL url = new URL("http://ict.usth.edu.vn/wp-content/" +
-//            "uploads/usth/usthlogo.png");
-//    // Make a request to server
-//    HttpURLConnection connection =
-//            (HttpURLConnection) url.openConnection();
-//connection.setRequestMethod("GET");
-//connection.setDoInput(true);
-//// allow reading response code and response dataconnection.
-//connection.connect();
-//    // Receive response
-//    int response = connection.getResponseCode();
-//Log.i("USTHWeather","The response is: "+response);
-//    InputStream is = connection.getInputStream();
-//    // Process image response
-//    Bitmap bitmap = BitmapFactory.decodeStream(is);
-//    ImageView logo = (ImageView) findViewById(R.id.logo);
-//logo.setImageBitmap(bitmap);
-//connection.disconnect();
+
 }
