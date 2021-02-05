@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Thời Tiết</string>
+    <string name="Mon">Có mây vài nơi</string>
+    <string name="Tue">Mưa rào</string>
+    <string name="Wed">Có mưa</string>
+    <string name="Thu">Mưa rào rải rác</string>
+    <string name="Fri">Hầu hết có mây</string>
+    <string name="Sat">Có mây vài nơi</string>
+    <string name="Sun">Có bão</string>
+</resources>

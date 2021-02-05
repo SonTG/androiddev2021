@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Mon">Partly Cloudy</string>
+    <string name="Tue">Showers</string>
+    <string name="Wed">Rain</string>
+    <string name="Thu">Scattered Showers</string>
+    <string name="Fri">Mostly Cloudy</string>
+    <string name="Sat">Partly Cloudy</string>
+    <string name="Sun">Thunderstorms</string>
+</resources>
