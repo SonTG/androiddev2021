@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background_forcast_bar"
+        android:id="@+id/rl_bar"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/usth_weather"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_reverse"
+                android:id="@+id/img_make_reload"
+                android:layout_marginRight="50dp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_donline"
+                android:id="@+id/img_other"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/fragment_forcast"
+        android:name="com.example.formhelp.practical6.fragment.FragmentForecast1"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/fragment_weather"
+        android:name="com.example.formhelp.practical6.fragment.FragmentWeather1"/>
+</LinearLayout>

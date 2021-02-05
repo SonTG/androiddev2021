@@ -1,0 +1,3 @@
+include ':navigationhelpform'
+include ':app'
+rootProject.name='appnewsT3H'

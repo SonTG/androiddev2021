@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <item
+        android:id="@+id/practical_1"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 1"
+        ></item>
+    <item
+        android:id="@+id/practical_2"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 2"></item>
+    <item
+        android:id="@+id/practical_3"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 3"></item>
+    <item
+        android:id="@+id/practical_4"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 4"
+        ></item>
+    <item
+        android:id="@+id/practical_5"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 5"
+        ></item>
+    <item
+        android:id="@+id/practical_6"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 6"
+        ></item>
+    <item
+        android:id="@+id/practical_7"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 7"
+        ></item>
+    <item
+        android:id="@+id/practical_11"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 11"
+        ></item>
+    <item
+        android:id="@+id/practical_12"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 12"
+        ></item>
+    <item
+        android:id="@+id/practical_13"
+        android:icon="@drawable/ic_doc"
+        android:title="Practical 13"
+        ></item>
+</menu>
